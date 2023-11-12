@@ -1,7 +1,7 @@
 const { GraphQLError } = require("graphql");
 const { Comment, Photo, User } = require('../models');
 
-const { signToken, AuthenticationError } = require('../utils/jwt');
+const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
     Query: {
